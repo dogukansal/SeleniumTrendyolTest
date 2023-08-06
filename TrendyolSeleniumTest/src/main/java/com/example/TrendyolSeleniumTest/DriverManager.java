@@ -10,9 +10,9 @@ public class DriverManager {
 		public static void setDriver(String drivername) {
 			
 			if (drivername=="chrome") {
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\doguk\\eclipse-workspace\\TrendyolSeleniumTest\\driver\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.addArguments("start-maximazed");
+				chromeOptions.addArguments("start-maximized");
 				driver = new ChromeDriver();
 				driver.get("https://www.trendyol.com/");
 				System.out.println("***** BROWSER IS CHROME *****");
